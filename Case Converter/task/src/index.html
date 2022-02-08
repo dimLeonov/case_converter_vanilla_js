@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+
+            <h1 class="title">Case Converter</h1>
+
+        <div class="body">
+            <textarea id="textareaId"></textarea>
+            <div class="controls">
+                <button id="upper-case" onclick="upperCase('textareaId')">Upper Case</button>
+                <button id="lower-case" onclick="lowerCase('textareaId')">Lower Case</button>
+                <button id="proper-case" onclick="properCase('textareaId')">Proper Case</button>
+                <button id="sentence-case" onclick="sentenceCase('textareaId')">Sentence Case</button>
+                <button id="save-text-file" onclick="download('text.txt', document.getElementById('textareaId').value)">Save Text File</button>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
